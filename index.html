@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <title>Document</title>
+</head>
+<body>
+  <div class="justify-content-center">
+    <form class="filecontainer" name="contact-us" action="https://formsubmit.co/khushbuswami55@gmail.com" method="POST" enctype="multipart/form-data">
+      
+      <!-- <input type="hidden" name="_cc" value="khushbuswami55@gmail.com"> -->
+      <input type="hidden" name="_subject" value="">
+      <input type="hidden" name="_next" value="https://boo2911.github.io/ThankYou/">
+      <div class="h1 mb-4">
+        <span class="mb-2 font-weight-light border-bottom">Join PharmaMart</span>
+      </div>
+    
+
+
+<!-- Name -->
+
+        <div class="row justify-content-center" for="fname">
+          <div class="col-3 text-right">
+            <span class="form-group">Name</span>
+          </div>
+          <div class="col-9 col-sm-6 input-group mb-3">
+            <div class="input-group-repend">
+              <img src="images/name.png" alt="" class="input-group-text" width="46" height="38">
+            </div>
+              <input class="form-control" type="text" id="fname" name="fname" placeholder="Your Name" required>
+          </div>
+             </div>
+
+<!-- Company Name -->
+
+             <div class="row justify-content-center" for="companyName">
+              <div class="col-3 text-right">
+                <span class="form-group">Company Name</span>
+              </div>
+              <div class="col-9 col-sm-6 input-group mb-3">
+                <div class="input-group-repend">
+                  <img src="images/company.png" alt="" class="input-group-text" width="46" height="38">
+                </div>
+                <input type="text" class="form-control" id="companyName" name="companyName" placeholder="Company Name" required>
+              </div>
+                 </div>
+                 
+
+<!-- GST Number -->
+
+<div class="row justify-content-center" for="gstnumber">
+  <div class="col-3 text-right">
+    <span class="form-group">GST Number</span>
+  </div>
+  <div class="col-9 col-sm-6 input-group mb-3">
+    <div class="input-group-repend">
+      <img src="images/gst.PNG" alt="" class="input-group-text" width="46" height="38">
+    </div>
+    <input type="text" class="form-control" id="gstnumber" name="gstnumber" placeholder="GST Number"
+    pattern="^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$" title="Invalid GST Number." required>
+  </div>
+     </div>
+
+<!-- Adress -->
+
+<div class="row justify-content-center" for="address">
+  <div class="col-3 text-right">
+    <span class="form-group">Address</span>
+  </div>
+  <div class="col-9 col-sm-6 input-group mb-3">
+    <div class="input-group-repend">
+      <img src="images/address.PNG" alt="" class="input-group-text" width="46" height="38">
+    </div>
+    <input type="text" class="form-control" id="address" name="address" placeholder="Full Postal Address" required>
+  </div>
+     </div>
+
+<!-- City -->
+        
+<div class="row justify-content-center" for="city">
+  <div class="col-3 text-right">
+    <span class="form-group">City</span>
+  </div>
+  <div class="col-9 col-sm-6 input-group mb-3">
+    <div class="input-group-repend">
+      <img src="images/city.PNG" alt="" class="input-group-text" width="46" height="38">
+    </div>
+    <input type="text" class="form-control" id="city" name="city" placeholder="City Name" required>
+  </div>
+     </div>
+        
+ <!-- State -->
+       
+ <div class="row justify-content-center" for="state">
+  <div class="col-3 text-right">
+    <span class="form-group">State</span>
+  </div>
+  <div class="col-9 col-sm-6 input-group mb-3">
+    <div class="input-group-repend">
+      <img src="images/state.PNG" alt="" class="input-group-text" width="46" height="38">
+    </div>
+    <input type="text" class="form-control" id="state" name="state" placeholder="State Name" required>
+  </div>
+     </div>
+
+<!-- ZipCode -->
+
+<div class="row justify-content-center" for="zipcode">
+  <div class="col-3 text-right">
+    <span class="form-group">Zip Code</span>
+  </div>
+  <div class="col-9 col-sm-6 input-group mb-3">
+    <div class="input-group-repend">
+      <img src="images/zip.PNG" alt="" class="input-group-text" width="46" height="38">
+    </div>
+    <input class="form-control" id="zipcode" name="zipcode" placeholder="Postal Pin Code" pattern="[0-9]{6}" title="Five digit zip code" required>
+  </div>
+     </div>
+
+<!-- Email -->
+
+<div class="row justify-content-center" for="email">
+  <div class="col-3 text-right">
+    <span class="form-group">Email Address</span>
+  </div>
+  <div class="col-9 col-sm-6 input-group mb-3">
+    <div class="input-group-repend">
+      <img src="images/email.PNG" alt="" class="input-group-text" width="46" height="38">
+    </div>
+    <input type="email" aria-describedby="emailHelp" class="form-control" id="email" name="email" placeholder="abcd@gmail.com" required>
+  </div>
+     </div>
+        
+<!-- Mobile -->
+
+<div class="row justify-content-center" for="phone">
+  <div class="col-3 text-right">
+    <span class="form-group">Mobile</span>
+  </div>
+  <div class="col-9 col-sm-6 input-group mb-3">
+    <div class="input-group-repend">
+      <img src="images/mobile.PNG" alt="" class="input-group-text" width="46" height="38">
+    </div>
+    <input placeholder="1234567890" type="tel" class="form-control" id="phone" name="phone"
+    pattern="[0-9]{10}" title="Please enter valid phone number" required>
+  </div>
+     </div>
+
+<!-- Website -->
+       
+<div class="row justify-content-center" for="website">
+  <div class="col-3 text-right">
+    <span class="form-group">Website</span>
+  </div>
+  <div class="col-9 col-sm-6 input-group mb-3">
+    <div class="input-group-repend">
+      <img src="images/website.PNG" alt="" class="input-group-text" width="46" height="38">
+    </div>
+    <input type="text" class="form-control" id="website" name="website" placeholder="www.example.com" required>
+  </div>
+     </div>
+        
+<!-- Message -->
+
+<div class="row justify-content-center" for="message">
+  <div class="col-3 text-right">
+    <span class="form-group">Message</span>
+  </div>
+  <div class="col-9 col-sm-6 input-group mb-3">
+    <div class="input-group-repend">
+      <img src="images/message.PNG" alt="" class="input-group-text" width="46" height="38">
+    </div>
+    <textarea type="text" class="form-control" row="3" id="message" name="message" placeholder="Message from your side" cols="50" rows="5" required></textarea>
+  </div>
+     </div>
+
+     <div class="h4 text-center mb-4">
+      <span class="mb-3 border-bottom">Attachments</span>
+    </div>
+
+<!-- Company Logo -->
+
+          <div class="form-group ml-3 mr-3" for="attachment1">
+            <label class="mb-0 row ml-0 text-dark">Company Logo
+              <small id="emailHelp" class="form-text text-muted ml-2">(Max accepted size of file: 300kB)</small>
+            </label>
+         <div class="inp-grp input-group-append">
+            <img src="images/attachments.PNG" alt="" class="input-group-text mt-4 mb-1" width="38" height="30">
+            <div class="flex">
+              <input type="file" class="form-control-file upload1" id="att1" name="attachment1" placeholder="Logo.png/.jpg/.pdf" accept=".png, .jpg, .jpeg" required/>
+              <button hidden="true" class="reset1 input-group-text btn btn-warning btn-sm">reset</button>
+              <div id="size1" hidden="true" class="input-group-text"></div>
+            </div>
+          </div>
+        </div>
+
+<!-- Product List -->
+
+          <div class="form-group ml-3 mr-3" for="attachment2">
+            <label class="mb-0 row ml-0">Product List 
+              <small id="emailHelp" class="form-text text-muted ml-2">(Max accepted size of each file: 200kB)</small>
+            </label>
+          <div class="inp-grp2 input-group-append ">
+            <img src="images/attachments.PNG" alt="" class="input-group-text mt-4 mb-1" width="38" height="30">
+            <div class="flex">
+              <input type="file" class="form-control-file upload2" name="attachment2" placeholder="xls(upto 500KB)" accept=".xlsx, .xls, .xlsb, .xlsm, .xltx, .doc, .docx" required/>
+              <button hidden="true" class="reset2 input-group-text btn btn-warning btn-sm">reset</button>
+              <div id="size2" hidden="true" class="input-group-text"></div> 
+            </div>
+             </div>
+        </div>
+
+<!-- Preferred Images -->
+
+          <div class="form-group ml-3 mr-3" for="attachment3"><label class="mb-0 row ml-0">Preferred Products Images  
+            <small id="emailHelp" class="form-text text-muted ml-2">(Max accepted size of each file: 350kB, Min:1 file(s), Max:12 files)</small>
+          </label>
+            
+          <div class="inp-grp3 mt-0">
+            <div class="inp3 input-group-append">
+              <img src="images/attachments.PNG" alt="" class="input-group-text mt-4 mb-1" width="38" height="30">
+            <div class="flex">
+              <input type="file" class="form-control-file upload3" name="attachment3" placeholder="Product Logo .jpg/.png(upto 500KB)" accept=".png, .jpg, .jpeg, .svg" required/>
+              <button hidden="true" class="reset3 input-group-text btn btn-warning btn-sm">reset</button>
+              <div id="size3" hidden="true" class="input-group-text"></div>
+            </div>
+              </div>
+          </div>
+          <div class="form-group text-right">
+            <button class="add3 btn mt-2 btn-md btn-secondary justify-content-center" type="button" onclick="addInput">Add more images</button>
+          </div>
+          
+        </div>
+
+
+<!-- Google drive -->
+
+<div class="form-group ml-3 mr-3">
+  <label for="linkForMoreImages">For more images (Optional, attach anyone of these links)</label>
+  <input type="url" name="linkForMoreImages" id="linkForMoreImages"class="form-control" placeholder="Google drive/WeTransfer/Your website gallery page link">
+  <small id="emailHelp" class="form-text text-muted">Please choose access option: anyone with the link while sharing the drive link</small>
+</div>
+
+<!-- Captcha -->
+<h4 class="text-left ml-3 mr-3">Enter Captcha</h4>
+
+  <div class="row justify-content-center " for="message">
+    <div class="col-9 col-sm-6 text-center">
+      <input type="text" readonly class="text-center font-weight-bold font-italic form-group captchaC" value="j2sS4m" id="capt"></input>
+    </div>
+    <div class="col-4 col-sm-4 input-group mt-0">
+      <input type="text" class="form-control" id="textinput">
+    </div>
+       </div>
+     <p class="text-center">Captcha not visible?  <img src="refresh.png" style="cursor:pointer" width="20px" onclick="cap()"></p>
+      
+     
+	<div class="form-group text-center mt-4 border-top">
+				<button onclick="validcap()" class="btn mt-2 btn-lg btn-primary justify-content-center">Submit</button>
+			</div>
+
+          <input type="hidden" name="_captcha" value="false">
+       
+       
+        </form>
+
+  </div>
+
+    
+ 
+
+<script>
+//setting the subject
+
+
+  //file size show
+
+  const fileEle = document.querySelector('.upload1');
+  const sizeEle = document.querySelector('#size1');
+  const reset1 = document.querySelector('.reset1');
+
+  reset1.addEventListener('click',function(e){
+    fileEle.value="";
+    sizeEle.value="";
+    sizeEle.hidden=true;
+  });
+
+  fileEle.addEventListener('change', function (e) {
+
+    const files = e.target.files;
+    if (files.length === 0) {
+          sizeEle.innerHTML = '';
+          reset1.hidden=true;
+          sizeEle.style.display = 'none';
+    }
+    else {
+      const formatFileSize = function (bytes) {
+      // const sufixes = ['B', 'kB', 'MB', 'GB', 'TB'];
+      // const i = Math.floor(Math.log(bytes) / Math.log(1024));
+      const siza = (bytes / Math.pow(1024, 1)).toFixed(2);
+      if(siza<=300){
+        reset1.hidden=false;
+    sizeEle.hidden=false;
+        return `${siza} kB`;
+      }else {swal("Minimize the size", "please choose file of size 300kB or less than 300kB.", "warning");
+      fileEle.value="";
+      reset1.hidden=true;
+      sizeEle.hidden=true;
+      return "";
+    }
+      };
+    sizeEle.innerHTML = formatFileSize(files[0].size);
+    }
+    console.log(fileEle.value);
+  });
+
+  //file size for 2
+  const fileEle2 = document.querySelector('.upload2');
+  const sizeEle2 = document.querySelector('#size2');
+  const reset2 = document.querySelector('.reset2');
+
+  reset2.addEventListener('click',function(e){
+   fileEle2.value="";
+   sizeEle2.value="";
+    sizeEle2.hidden=true;
+  });
+
+  fileEle2.addEventListener('change', function (e) {
+
+    const files2 = e.target.files;
+    if (files2.length === 0) {
+          sizeEle2.innerHTML = '';
+          reset2.hidden=true;
+          sizeEle2.style.display = 'none';
+    }
+    else {
+      const formatFileSize2 = function (bytes) {
+      // const sufixes2 = ['B', 'kB', 'MB', 'GB', 'TB'];
+      // const i2 = Math.floor(Math.log(bytes) / Math.log(1024));
+      const siza = (bytes / Math.pow(1024, 1)).toFixed(2);
+      if(siza<=200){
+        sizeEle2.hidden=false;
+        reset2.hidden=false;
+        return `${siza} kB`;
+      }else {
+        swal("Minimize the size", "please choose file of size 200kB or less than 200kB.", "warning");
+      sizeEle2.hidden=true;
+      reset2.hidden=true;
+      fileEle2.value="";
+      return "";
+      }
+      };
+   
+    sizeEle2.innerHTML = formatFileSize2(files2[0].size);
+    }
+  });
+
+ 
+  //Add more button work
+
+const addBtn3 = document.querySelector(".add3");
+
+const input = document.querySelector(".inp-grp3");
+
+const inpt1 = document.querySelector(".upload3");
+
+let preFile=inpt1.classList;
+let preName = inpt1.name;
+let preSize = "";
+let flag = true;
+
+console.log(preName);
+
+const sizeEle3 = document.querySelector('#size3');
+preSize = sizeEle3.value;
+console.log(preSize);
+
+let x=1;
+
+function removeFile(){
+    this.parentElement.parentElement.remove();
+    x--;
+    if(x==1) {
+      preFile.remove(preFile[1]);
+      preFile.add("upload3");
+     }
+    else{
+      preFile.remove(preFile[1]);
+      preFile.add("upload3"+(x-1));
+      
+    }
+    let inptCheck = document.querySelector(`.${preFile[1]}`);
+      preName = "attachment3"+x;
+      console.log("After deleting the name of prev file is "+preName + " and file is "+preFile[1]+" "+inptCheck.value+" flagn is "+flag);
+ 
+}
+
+function addInput(){
+  let inptCheck = document.querySelector(`.${preFile[1]}`);
+  console.log(preName +" and "+ inptCheck.name);
+  if((x==1 && inptCheck.value.length==0) || document.querySelector(".upload3").value.length==0){
+    
+      swal("", "Choose a file first!", "warning");
+      
+    
+  }else if(x<12 && inptCheck.value.length!=0){
+
+    const mainIP = document.createElement("div");
+    mainIP.classList.add("inp3", "input-group-append");
+
+    const logo = document.createElement("img");
+    logo.src="images/attachments.PNG";
+    logo.classList.add("input-group-text","mt-4", "mb-1");
+    logo.width="38";
+    logo.height="30";
+
+    
+    const inpFile = document.createElement("input");
+  inpFile.type = "file";
+  inpFile.name = "attachment3"+x;
+  inpFile.accept = ".png, .jpeg, .jpg, .svg";
+  inpFile.classList.add("form-control-file", "upload3"+x);
+   
+  const sizeShow = document.createElement("div");
+  sizeShow.id = "size3"+x++;
+  sizeShow.classList.add("input-group-text");
+  sizeShow.hidden=true;
+
+  const btn = document.createElement("button");
+  btn.className = "delete input-group-text btn btn-danger btn-sm";
+  btn.innerHTML = "&times;";
+
+
+  btn.addEventListener("click", removeFile);
+
+  const flex = document.createElement("div");
+  flex.className = "flex input-group-append";
+
+  input.appendChild(mainIP);
+  mainIP.appendChild(logo);
+  mainIP.appendChild(flex);
+  flex.appendChild(inpFile);
+  flex.appendChild(btn);
+  flex.appendChild(sizeShow);
+
+
+
+
+  //for these files size
+  const inpFSize = document.querySelector(`.${inpFile.classList[1]}`);
+  const sizeShowx = document.querySelector(`#${sizeShow.id}`);
+  sizeShowx.classList.add("size3x");
+
+  inpFSize.addEventListener('change', function(e){
+    const files3x = e.target.files;
+    if (files3x.length === 0) {
+          sizeShowx.innerHTML = '';
+          sizeShowx.hidden=true;
+          sizeShowx.style.display = 'none';
+    }
+    else {
+      const formatFileSize3 = function (bytes) {
+        const sufixes2 = ['B', 'kB', 'MB', 'GB', 'TB'];
+      const i = Math.floor(Math.log(bytes) / Math.log(1024));
+      const siza = (bytes / Math.pow(1024, 1)).toFixed(2);
+      if(siza<=350){
+      sizeShowx.hidden=false;
+        return `${siza} ${sufixes2[1]}`;
+      }else {
+        swal("Minimize the size", "please choose file of size 350kB or less than 350kB.", "warning");
+      inpFSize.value="";
+      sizeShowx.hidden=true;
+      return "";
+      }
+      };
+      sizeShowx.innerHTML = formatFileSize3(files3x[0].size);
+      preSize = sizeShowx.innerHTML;
+    console.log(preSize);
+  }
+});
+preFile = inpFile.classList;
+console.log(preFile[1]);
+preName = inpFile.name;
+console.log("before deleting the name of prev file is "+preName);
+
+if(x>=12){
+    swal("Last attachment!", "For more attachments attach your google link to the below option", "info");
+  addBtn3.hidden=true;
+  }
+
+  }
+
+ else {
+  if(x>=11){
+    swal("", "For more attachments attach your google link to the below option", "info");
+  addBtn3.hidden=true;
+  }
+    swal("", "Choose a file first!", "warning");
+}
+}
+
+  addBtn3.addEventListener("click", addInput);
+
+   //file size for 3
+
+   function resetFile3(){
+    fileEle3.value="";
+    sizeEle3.value="";
+    sizeEle3.hidden=true;
+   }
+   const fileEle3 = document.querySelector('.upload3');
+   const resetBtn = document.querySelector('.reset3');
+   
+  resetBtn.addEventListener("click", resetFile3);
+   
+
+  fileEle3.addEventListener('change', function (e) {
+
+    const files3 = e.target.files;
+    if (files3.length === 0) {
+          sizeEle3.innerHTML = '';
+      sizeEle3.hidden=true;
+      resetBtn.hidden=true;
+          sizeEle3.style.display = 'none';
+    }
+    else {
+      const formatFileSize3 = function (bytes) {
+      const sufixes2 = ['B', 'kB', 'MB', 'GB', 'TB'];
+      const i = Math.floor(Math.log(bytes) / Math.log(1024));const siza = (bytes / Math.pow(1024, 1)).toFixed(2);
+      if(siza<=200){
+        sizeEle3.hidden=false;
+    resetBtn.hidden=false;
+        return `${siza} ${sufixes2[1]}`;
+      }else {
+      swal("Minimize the Size", "please choose file of size 350kB or less than 350kB.", "warning");
+      fileEle3.value="";
+      sizeEle3.hidden=true;
+      resetBtn.hidden=true;
+      return "";
+      }
+      };
+    sizeEle3.innerHTML = formatFileSize3(files3[0].size);
+    preSize = sizeEle3.innerHTML;
+    console.log(preSize);
+    }
+  });
+
+
+  //for captcha submit button
+
+</script>
+
+<script type="text/javascript">
+    window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+
+  function cap(){
+    var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
+                 ,'W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i',
+                 'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+                 var a = alpha[Math.floor(Math.random()*62)];
+                 var b = alpha[Math.floor(Math.random()*62)];
+                 var c = alpha[Math.floor(Math.random()*62)];
+                 var d = alpha[Math.floor(Math.random()*62)];
+                 var e = alpha[Math.floor(Math.random()*62)];
+                 var f = alpha[Math.floor(Math.random()*62)];
+
+                 var final = a+b+c+d+e+f;
+                 document.getElementById("capt").value=final;
+               }
+               function validcap(){
+                var stg1 = document.getElementById('capt').value;
+                var stg2 = document.getElementById('textinput').value;
+                
+               if(stg1 != stg2){
+                  swal('', 
+                  "Please enter a valid captcha",
+                   "warning");
+                  event.preventDefault();
+                
+                }else {
+                  const company = document.querySelector("companyName");
+  const val = document.getElementsByName("_subject");
+  val.value = `New Submission from ${company.value}`;
+  console.log(company.value);
+  console.log(val.value);
+                }
+               }
+</script>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+ </body>
+</html>
